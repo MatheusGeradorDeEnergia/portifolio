@@ -1,37 +1,58 @@
-@charset "UTF-8";
+@charset "UFT-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
-:root{
-    --cor1: #034159; 
-    --cor2: #025951; /*cor desataque*/
-    --cor3: #02735E;
-    --cor4: #038C3E;
-    --cor5: #0CF25D; /*cor principal*/
+:root {
+    --darkblue: #313E59;
+    --mediumblue: #54678C;
+    --midblue: #889ABF;
+    --lightblue: #B4C0D9;
+    --darkblue2: #212E40;
+    --white: #FFFFFF;
 }
 
-body{
-    background-color: #0CF25D;
+body {
+    background-color: var(--mediumblue);
     font-family: "Lato";
     height: 100vh;
+
 }
 
-header{
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1erm;
+    gap: 1rem;
     flex-wrap: wrap;
     padding: .8rem;
-    background-color: var(--cor1);
+    background-color: var(--darkblue);
     min-height: 50px;
+
+}
+.eu.png {
+    max-width: 60px;
+    height: 100%;
+
 }
 
-.nav-links{
+.nav-links {
     text-decoration: none;
-    color: var(--cor5);
+    color: var(--white);
 }
 
+.box-btn-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+button, .link-action {
+    padding: .6rem;
+    gap: 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .4s;
+}
