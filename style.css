@@ -43,6 +43,7 @@ header {
 .nav-links {
     text-decoration: none;
     color: var(--white);
+    padding: 1rem;
 }
 
 .box-btn-actions{
@@ -113,4 +114,54 @@ strong{
 .img-perfil{
     border-radius: 50%;
     width: 100%;
+}
+
+.second-section{
+    background-color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.second-section>ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.second-section ul li{
+    color: var(--lightblue);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.title{
+    color:var(--white)
+}
+
+.second-section ul li:hover{
+    color: var(--white);
+    transition: .2s;
+    cursor: default;
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.third-section> div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
 }
