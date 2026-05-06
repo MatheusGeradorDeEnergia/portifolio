@@ -34,18 +34,32 @@ header {
     min-height: 50px;
 
 }
-.eu.png {
+.box-img{
     max-width: 60px;
     height: 100%;
 
+}
+
+nav{
+    display: flex; /* Layout flexível */
+    gap: 2rem; /* Espaço entre links */
+    justify-content: center; /* Centraliza */
+    align-items: center; /* Alinha verticalmente */
+    flex-wrap: wrap; /* Permite quebra */
 }
 
 .nav-links {
     text-decoration: none;
     color: var(--white);
     padding: 1rem;
+    transition: .4s;    
 }
 
+.nav-links:hover{
+    color: var(--lightblue); /* Muda cor */
+    transition: .4s; /* Animação suave */
+
+}
 .box-btn-actions{
     display: flex;
     gap: 1rem;
@@ -57,14 +71,23 @@ header {
     color: var(--white);
     width: 100px;
 }
+.btn-actions:hover{
+    border: 1px solid var(--lightblue);
+    color: var(--lightblue);
+}
+    
 
-button, .link-action {
+button, .link-action{
     padding: .6rem;
-    gap: 1rem;
-    border-radius: 7px;
+    font-size: .9rem;
+    border-radius: 6px;
     cursor: pointer;
     transition: .4s;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
 }
+
 
 main{
     display: flex;
@@ -116,7 +139,7 @@ strong{
     width: 100%;
 }
 
-.second-section{
+.second-section, .fourth-section{
     background-color: var(--darkblue);
     display: flex;
     flex-direction: column;
@@ -165,3 +188,34 @@ strong{
 
 
 }
+
+.third-section> div img{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.third-section> div p{
+    max-width: 600px;
+    color: var(--white);
+    text-align: justify;
+}
+.third-section> h2{
+    text-align: center;
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+footer>div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
