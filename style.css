@@ -203,13 +203,17 @@ strong{
     text-align: center;
 }
 
+
 footer{
     padding: 4rem;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 2rem;
 }
 
+
+h2{
+    text-align: center;
+}
 
 footer>div{
     display: flex;
@@ -219,3 +223,9 @@ footer>div{
 }
 
 
+footer> div{
+    display: flex;
+    justify-content: center;
+    gap: 4  rem;
+    flex-wrap: wrap;
+}
